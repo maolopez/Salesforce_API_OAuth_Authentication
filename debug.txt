@@ -1,0 +1,52 @@
+++ date '+"%Y%m%d_%H%M%S"'
++ DATE='"20181231_134811"'
++ DATE='"20181231_134811'
++ DATE=20181231_134811
++ echo 20181231_134811
+20181231_134811
++ username=integration@EndPoint.com.EndPointdev
++ password=123456Jencomart123456789123456789
++ client_id=ABCDEFGHIJK123456789abcdefghijk1ab2c3d4e5f6g7h8i9
++ client_secret=123456789012345
++ grant_type=password
++ param1='"username=integration@EndPoint.com.EndPointdev"'
++ param1='"username=integration@EndPoint.com.EndPointdev'
++ param1=username=integration@EndPoint.com.EndPointdev
++ param2='"password=123456Jencomart123456789123456789"'
++ param2='"password=123456Jencomart123456789123456789'
++ param2=password=123456Jencomart123456789123456789
++ param3='"client_id=ABCDEFGHIJK123456789abcdefghijk1ab2c3d4e5f6g7h8i9"'
++ param3='"client_id=ABCDEFGHIJK123456789abcdefghijk1ab2c3d4e5f6g7h8i9'
++ param3=client_id=ABCDEFGHIJK123456789abcdefghijk1ab2c3d4e5f6g7h8i9
++ param4='"client_secret=123456789012345"'
++ param4='"client_secret=123456789012345'
++ param4=client_secret=123456789012345
++ param5='"grant_type=password"'
++ param5='"grant_type=password'
++ param5=grant_type=password
++ Blackbox_Environment=https://test.salesforce.com/services/oauth2/token
++ Production_Environment=https://login.salesforce.com/services/oauth2/token
++ myJencomartStoreId=5831
++ lastStoreId=5831
++ Jencomart_enpoint=https://walmart001--pwcdev.my.salesforce.com/services/apexrest/CacheProducts
+++ grep -oP '"access_token":\K.*?(?=,)'
+++ curl https://test.salesforce.com/services/oauth2/token -d username=integration@EndPoint.com.EndPointdev -d password=123456Jencomart123456789123456789 -d client_id=ABCDEFGHIJK123456789abcdefghijk1ab2c3d4e5f6g7h8i9 -d client_secret=123456789012345 -d grant_type=password
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   611    0   378  100   233    208    128  0:00:01  0:00:01 --:--:--   208
++ TEMP='"ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7"'
++ echo '"ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7"'
+"ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7"
++ TEMP1='"ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7'
++ TOKEN='ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7'
++ echo 'ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7'
+ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7
++ curl -X POST https://walmart001--pwcdev.my.salesforce.com/services/apexrest/CacheProducts -H 'Authorization: OAuth ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -d '{"store" : { "myJencomartStoreId":"5831", "lastStoreId":"5831"} }'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1295    0  1232  100    63    262     13  0:00:04  0:00:04 --:--:--   387
+
+
+------------------
+(program exited with code: 0)
+Press return to continue
