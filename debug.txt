@@ -28,7 +28,7 @@
 + Production_Environment=https://login.salesforce.com/services/oauth2/token
 + myJencomartStoreId=5831
 + lastStoreId=5831
-+ Jencomart_enpoint=https://walmart001--pwcdev.my.salesforce.com/services/apexrest/CacheProducts
++ Jencomart_enpoint=https://jencomart--pwcdev.my.salesforce.com/services/apexrest/CacheProducts
 ++ grep -oP '"access_token":\K.*?(?=,)'
 ++ curl https://test.salesforce.com/services/oauth2/token -d username=integration@EndPoint.com.EndPointdev -d password=123456Jencomart123456789123456789 -d client_id=ABCDEFGHIJK123456789abcdefghijk1ab2c3d4e5f6g7h8i9 -d client_secret=123456789012345 -d grant_type=password
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -41,7 +41,7 @@
 + TOKEN='ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7'
 + echo 'ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7'
 ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7
-+ curl -X POST https://walmart001--pwcdev.my.salesforce.com/services/apexrest/CacheProducts -H 'Authorization: OAuth ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -d '{"store" : { "myJencomartStoreId":"5831", "lastStoreId":"5831"} }'
++ curl -X POST https://jencomart--pwcdev.my.salesforce.com/services/apexrest/CacheProducts -H 'Authorization: OAuth ABCDEFGHIJKLMNOPQRSTUVsAQDEn7.2c.RHIRmsAVWKLAF9uxdWLDoXPcpswldl1uVIKunDg.mJ5cEYr12345678901234567D5hRk2nj7' -H 'Cache-Control: no-cache' -H 'Content-Type: application/json' -d '{"store" : { "myJencomartStoreId":"5831", "lastStoreId":"5831"} }'
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  1295    0  1232  100    63    262     13  0:00:04  0:00:04 --:--:--   387
